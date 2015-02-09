@@ -1,3 +1,3 @@
 class Location < ActiveRecord::Base
-  has_many :event
+  has_many :events, dependent: :destroy
 end

@@ -1,0 +1,27 @@
+<body>
+  <div class="container">
+
+    <div class="page-header">
+      <div class="pull-right">
+        <a class="btn btn-info"<%= link_to 'Edit', edit_location_event_path %>
+      </div>
+      <h1><%= @event.description %></h1>
+    </div>
+
+    <ol class="breadcrumb">
+      <li><%= link_to 'Locations', locations_path %></li>
+      <li><%= link_to @location.name, @location %></li>
+      <li class="active"><%= @event.description %></li>
+    </ol>
+
+    <dl class="dl-horizontal">
+      <p><dt><strong>Event Desciption:</strong></dt></p>
+        <p><dd><%= @event.description %></dd></p>
+      <p><dt><strong>Date:</strong></dt></p>
+        <p><dd><%= @event.date %></dd></p>
+      <p><dt><strong>Requires ID:</strong></dt></p>
+        <p><dd><%= @event.requires_id %></dt></p>
+    </dl>
+
+  </div>
+</body>
